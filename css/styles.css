@@ -504,11 +504,11 @@ footer {
     pointer-events: none;
     user-select: none;
 }
-/* .is-open {
+.is-open {
     opacity: 1;
     pointer-events: auto;
     user-select: auto;
-} */
+}
 .popup-review {
     position: relative;
     background-color: #FCFCFC;
@@ -517,7 +517,7 @@ footer {
     max-height: 584px;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     overflow-y: auto;
 }
 .close-popup {
@@ -551,7 +551,6 @@ footer {
     letter-spacing: 0.02em;
     text-align: center;
     width: 360px;
-    margin-top: 48px;
     margin-bottom: 16px;
 }
 .popup-wraper {
@@ -595,6 +594,9 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     left: 16px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-field {
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -615,6 +617,7 @@ footer {
 .comment-field::placeholder {
     color: rgba(46, 47, 66, 0.4);
 }
+.form-icon:focus,
 .user-field:focus,
 .comment-field:focus {
     border-color: #4D5AE5;
@@ -629,7 +632,6 @@ footer {
 .terms-label {
     display: flex;
     align-items: baseline;
-    column-gap: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -641,7 +643,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-right: 4px;
+    margin-right: 8px;
     height: 16px;
     width: 16px;
     border-radius: 2px;
@@ -665,7 +667,7 @@ footer {
     outline: none;
 }
 .privacy-link {
-    /* color: #8E8F99; */
+    color: #4D5AE5;
     line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
