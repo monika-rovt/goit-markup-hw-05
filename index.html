@@ -334,5 +334,56 @@
       </div>
     </footer>
     <!-- #endregion footer-->
+    <!-- #region popup -->
+    <div class="backdrop-popup hide-popup">
+      <div class="popup-review">
+        <button class="close-popup">
+          <svg class="close-popup-icon" width="8px" height="8px"><use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="popup-description">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="popup-wraper">
+            <label class="label-fild" for="user-name">Name</label>
+            <div class="field-wraper">
+              <input class="user-field" type="text" id="user-name" name="user-name" required>
+              <svg class="form-icon" width="18" height="24"> <use href="./images/icons.svg#icon-person"></use> </svg>
+            </div>
+          </div>
+          <div class="popup-wraper">
+            <label class="label-fild" for="user-phone">Phone</label>
+            <div class="field-wraper">
+              <input class="user-field" type="tel" id="user-phone" name="user-phone">
+              <svg class="form-icon" width="18" height="24"> <use href="./images/icons.svg#icon-phone"></use> </svg>
+            </div>
+          </div>
+          <div class="popup-wraper">
+            <label class="label-fild" for="user-email">Email</label>
+            <div class="field-wraper">
+              <input class="user-field" type="email" id="user-email" name="user-email" required>
+              <svg class="form-icon" width="18" height="24"> <use href="./images/icons.svg#icon-email"></use> </svg>
+            </div>
+          </div>
+          <div class="popup-wraper">
+            <label class="label-fild" for="user-comment">Comment</label>
+            <textarea class="comment-field" name="user-comment" id="user-comment" placeholder="Text input" required></textarea>
+          </div>
+          <div class="">
+            <input type="checkbox" id="user-terms" name="user-terms" required class="input-checkbox visually-hidden">
+            <label for="user-terms" class="terms-label">
+              <span class="custom-checkbox">
+                <svg class="check-icon" width="10px" height="8px"><use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="popup-button">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- #endregion popup -->
+
   </body>
 </html>
