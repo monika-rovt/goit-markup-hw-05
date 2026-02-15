@@ -435,19 +435,25 @@ footer {
     height: 40px;
     padding: 8px 8px 8px 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    outline: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.00;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 2.00;
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
-.footer-input placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2.00;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
+.footer-input:focus {
+    outline: none;
+    border-color: #31D0AA;
 }
 .footer-submit-button {
     display: flex;
@@ -475,7 +481,7 @@ footer {
 }
 .footer-submit-button:hover,
 .footer-submit-button:focus {
-    background-color: #404BBF;
+    background-color: #31D0AA;
     outline: none;
 }
 /* #endregion footer*/
@@ -498,11 +504,11 @@ footer {
     pointer-events: none;
     user-select: none;
 }
-.is-open {
+/* .is-open {
     opacity: 1;
     pointer-events: auto;
     user-select: auto;
-}
+} */
 .popup-review {
     position: relative;
     background-color: #FCFCFC;
@@ -617,6 +623,9 @@ footer {
 .user-field:focus ~ .form-icon {
     fill: #4D5AE5;
 }
+.popup-checkbox {
+    margin-top: 16px;
+}
 .terms-label {
     display: flex;
     align-items: baseline;
@@ -644,7 +653,9 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-checkbox:focus + .terms-label .custom-checkbox {
+    background-color: #404BBF;
     border-color: #404BBF;
+    fill: #F4F4FD;
     outline: none;
 }
 .input-checkbox:checked + .terms-label .custom-checkbox {
@@ -654,13 +665,13 @@ footer {
     outline: none;
 }
 .privacy-link {
-    color: #8E8F99;
+    /* color: #8E8F99; */
     line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     font-weight: 400;
     font-size: 12px;
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     outline: none;
 }
