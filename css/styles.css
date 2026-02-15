@@ -397,8 +397,10 @@ footer {
 }
 .footer-link {
     display: block;
+    margin-right: 80px;
 }
-.footer-link p {
+.footer-link p,
+.footer-form p {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -416,6 +418,65 @@ footer {
 .footer-link-icon:hover,
 .footer-link-icon:focus {
     background-color: #31D0AA;
+}
+.footer-form {
+    display: block;
+}
+.footer-submit-form {
+    display: flex;
+    column-gap: 24px;
+    margin-top: 16px;
+}
+.footer-input {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    padding: 8px 8px 8px 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    outline: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.00;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.footer-input placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.00;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.footer-submit-button {
+    display: flex;
+    column-gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.04em;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-icon {
+    fill: #FFFFFF;
+}
+.footer-submit-button:hover,
+.footer-submit-button:focus {
+    background-color: #404BBF;
+    outline: none;
 }
 /* #endregion footer*/
 /* #region popup */
@@ -436,6 +497,11 @@ footer {
     opacity: 0;
     pointer-events: none;
     user-select: none;
+}
+.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    user-select: auto;
 }
 .popup-review {
     position: relative;
@@ -516,7 +582,6 @@ footer {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px 8px 8px 34px;
-    /* margin-bottom: 8px; */
 }
 .form-icon {
     fill: #2E2F42;
