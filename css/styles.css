@@ -652,16 +652,25 @@ footer {
     transition-duration: 250ms, 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
+.check-icon {
+    fill: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-checkbox:focus ~ .check-icon {
+    fill: #F4F4FD;
+}
+.input-checkbox:checked ~ .check-icon {
+    fill: #F4F4FD;
+}
 .input-checkbox:focus + .terms-label .custom-checkbox {
-    /* background-color: #404BBF; */
     border-color: #404BBF;
-    /* fill: #F4F4FD; */
     outline: none;
 }
 .input-checkbox:checked + .terms-label .custom-checkbox {
     background-color: #404BBF;
     border-color: #404BBF;
-    fill: #F4F4FD;
     outline: none;
 }
 .privacy-link {
