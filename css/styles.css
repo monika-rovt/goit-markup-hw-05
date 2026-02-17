@@ -658,11 +658,10 @@ footer {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.terms-label:focus ~ .check-icon {
+
+.input-checkbox:checked + .terms-label .check-icon {
     fill: #F4F4FD;
-}
-.terms-label:checked ~ .check-icon {
-    fill: #F4F4FD;
+    
 }
 .input-checkbox:focus + .terms-label .custom-checkbox {
     border-color: #404BBF;
